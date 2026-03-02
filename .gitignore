@@ -1,4 +1,6 @@
 dataFiles/
+CrankNicolson
+CrankNicolson.o
 *.dat
 .DS_Store
 graph.pdf

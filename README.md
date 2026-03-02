@@ -8,7 +8,7 @@ The 1D heat equation solved here is:
 
 $$\frac{\partial u}{\partial t} = \frac{\partial^2 u}{\partial x^2}$$
 
-with Dirichlet boundary conditions \(u(0,t) = u(L,t) = 0\) and a user-selected initial condition \(u(x,0)\).
+with Dirichlet boundary conditions $u(0,t) = u(L,t) = 0$ and a user-selected initial condition $u(x,0)$.
 
 ## Method
 
@@ -22,13 +22,13 @@ This yields a tridiagonal linear system at each time step, solved using the **Th
 
 | Parameter | Value |
 |-----------|-------|
-| Spatial domain | \([0, 10]\) |
-| Time domain | \([0, 8]\) |
+| Spatial domain | $[0, 10]$ |
+| Time domain | $[0, 8]$ |
 | Spatial points (`nx`) | 80 |
 | Time steps (`nt`) | 1000 |
-| \(\Delta x\) | 0.125 |
-| \(\Delta t\) | 0.008 |
-| \(\sigma = \Delta t / (2\Delta x^2)\) | ~0.256 |
+| $\Delta x$ | 0.125 |
+| $\Delta t$ | 0.008 |
+| $\sigma = \Delta t / (2\Delta x^2)$ | ~0.256 |
 
 ## Initial Conditions
 
@@ -36,9 +36,9 @@ Three initial profiles are available, selected at runtime:
 
 | Argument | Profile |
 |----------|---------|
-| `gaussian` | Biquadratic pulse: \((10x - 4)^2 (6 - 10x)^2\) |
-| `sin` | Sinusoidal: \(\sin(x)\) |
-| `quadratic` | Gaussian bell: \(e^{-80(x-8)^2}\) |
+| `gaussian` | Biquadratic pulse: $(10x - 4)^2 (6 - 10x)^2$ |
+| `sin` | Sinusoidal: $\sin(x)$ |
+| `quadratic` | Gaussian bell: $e^{-80(x-8)^2}$ |
 
 ## Requirements
 
