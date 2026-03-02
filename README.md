@@ -12,11 +12,7 @@ with Dirichlet boundary conditions $u(0,t) = u(L,t) = 0$ and a user-selected ini
 
 ## Method
 
-The Crank-Nicolson scheme discretizes the equation as a half-implicit, half-explicit step:
-
-$$\frac{u_j^{n+1} - u_j^n}{\Delta t} = \frac{1}{2}\left(\delta_x^2 u_j^{n+1} + \delta_x^2 u_j^n\right)$$
-
-This yields a tridiagonal linear system at each time step, solved using the **Thomas algorithm** (tridiagonal matrix algorithm).
+The Crank-Nicolson scheme discretizes the equation as a half-implicit, half-explicit step. This yields a tridiagonal linear system at each time step, solved using the **Thomas algorithm** (tridiagonal matrix algorithm).
 
 **Numerical parameters:**
 
