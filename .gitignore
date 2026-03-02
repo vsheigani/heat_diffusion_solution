@@ -1,0 +1,4 @@
+dataFiles/
+*.dat
+.DS_Store
+graph.pdf
